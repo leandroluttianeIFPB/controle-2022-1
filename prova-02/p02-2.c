@@ -184,30 +184,39 @@ int main()
                 switch(tabuleiro[i][j])
                 {
                     case ERRO:
+                        // imprime posição de tentativa errada
                         printf("-  ");
                         break;
                     case ACERTO:
+                        // imprime posição de tentativa com acerto
                         printf("X  ");
                         break;
                     default:  
+                        // imprime posição que ainda não foi tentada
                         printf("0  ");
                         break;             
                 };                
             }
         }  
 
+        // verifica se todas as posições de navios foram
+        // acertadas
         if(n_acertos == N_NAVIOS_POSICOES)
         {
             printf("\n\n Parabens! Voce afundou todos os navios!");
             break;
         }
 
+        // incrementa contador de tentativas realizadas
         tentativas++;
     } 
 
     printf("\n");
+    // verifica se todos os navios foram atingidos
     if(n_acertos != N_NAVIOS_POSICOES)
     {
+        // caso contrário, exibe tabuleiro com o
+        // posicionamento dos navios, erros e acertos do usuário
         for(int i = 0; i < DIM_TABULEIRO; i++)
         {
             printf("\n");
@@ -216,12 +225,16 @@ int main()
                 switch(tabuleiro[i][j])
                 {
                     case ERRO:
+                        // imprime posição de tentativa errada
                         printf("-  ");
                         break;
                     case ACERTO:
+                        // imprime posição de tentativa com acerto
                         printf("X  ");
                         break;
                     default:  
+                        // imprime posição que ainda não foi tentada
+                        // com navio 1, ou sem navio 0
                         printf("%d  ",tabuleiro[i][j]);
                         break;             
                 };                
