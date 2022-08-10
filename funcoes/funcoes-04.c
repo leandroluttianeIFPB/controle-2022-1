@@ -6,7 +6,6 @@
         area = sqrt(s * (s-a) * (s-b) * (s-c))
 */
 
-
 #include <stdio.h>
 #include <math.h>
 

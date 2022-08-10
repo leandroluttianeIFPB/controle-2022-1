@@ -50,19 +50,23 @@ float delta(float a, float b, float c)
     return (b * b) - 4 * a * c;
 }
 
-// função que imprime informação sobre as variáveis de uma equação do segundo grau
+// função que imprime informação sobre as variáveis
+// de uma equação do segundo grau
 void avaliaRaizes(int delta)
 {
-    if(delta  < 0)
+    if(delta < 0)
     {
+        // possui apenas raizes complexas
         printf("\n Nao possui raizes reais!");
     }
     else if(delta == 0)
     {
+        // possui duas raizes reais iguais
         printf("\n Possui duas raizes iguais!");
     }
     else
     {
+        // delta > 0: possui duas raizes distintas
         printf("\n Possui duas raizes distintas!");
     }
 }

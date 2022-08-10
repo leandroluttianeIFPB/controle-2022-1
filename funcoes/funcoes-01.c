@@ -12,7 +12,8 @@ void exibirDiaSemana(int dia);
 
 int main()
 {
-    int dia_semana;     // recebe valor numérico referente ao dia da semana
+    // recebe valor numérico referente ao dia da semana
+    int dia_semana;     
 
     // entrada de valor numérico
     printf("\n Dia da semana <int - 1 a 7>: ");
@@ -32,28 +33,28 @@ void exibirDiaSemana(int dia)
     // imprime o dia da semana correspondente
     switch(dia)
     {
-        case 1:
+        case 1:  // valor referente ao domingo
             printf("\n Dia da semana: domingo!");
             break;
-        case 2:
+        case 2:  // valor referente à segunda-feira
             printf("\n Dia da semana: segunda-feira!");
             break;
-        case 3:
+        case 3:  // valor referente à terça-feira
             printf("\n Dia da semana: terca-feira!");
             break;
-        case 4:
+        case 4:  // valor referente à quarta-feira
             printf("\n Dia da semana: quarta-feira!");
             break;
-        case 5:
+        case 5:  // valor referente à quinta-feira
             printf("\n Dia da semana: quinta-feira!");
             break;
-        case 6:
+        case 6:  // valor referente à sexta-feira
             printf("\n Dia da semana: sexta-feira!");
             break;
-        case 7:
+        case 7:  // valor referente à sábado
             printf("\n Dia da semana: sabado!");
             break;
-        default:
+        default:  // qualquer valor inválido
             printf("\n ERRO: valor invalido para dia da semana!");
             break;
     };

@@ -3,11 +3,10 @@
     retorna umconceito.
 
             NOTA           CONCEITO
-        9 <= nota <=10        A
-         7 <= nota < 9        B
-           7 < nota          C
+       9 <= nota <=10         A 
+       7 <= nota < 9          B
+        7 < nota              C
 */
-
 
 #include <stdio.h>
 
